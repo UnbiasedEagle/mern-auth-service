@@ -1,0 +1,20 @@
+{
+  "name": "auth-service",
+  "version": "1.0.0",
+  "description": "The user management system",
+  "homepage": "https://github.com/UnbiasedEagle/mern-auth-service#readme",
+  "bugs": {
+    "url": "https://github.com/UnbiasedEagle/mern-auth-service/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UnbiasedEagle/mern-auth-service.git"
+  },
+  "license": "ISC",
+  "author": "Saurabh Singh <devsaurabhsingh@gmail.com>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/server.js"
+  }
+}
