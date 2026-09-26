@@ -1,24 +1,27 @@
 {
-  "name": "auth-service",
-  "version": "1.0.0",
-  "description": "The user management system",
-  "homepage": "https://github.com/UnbiasedEagle/mern-auth-service#readme",
-  "bugs": {
-    "url": "https://github.com/UnbiasedEagle/mern-auth-service/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/UnbiasedEagle/mern-auth-service.git"
-  },
-  "license": "ISC",
-  "author": "Saurabh Singh <devsaurabhsingh@gmail.com>",
-  "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node src/server.js"
-  },
-  "devDependencies": {
-    "@types/node": "^26.6.2",
-    "typescript": "^7.0.2"
-  }
+    "name": "auth-service",
+    "version": "1.0.0",
+    "description": "The user management system",
+    "homepage": "https://github.com/UnbiasedEagle/mern-auth-service#readme",
+    "bugs": {
+        "url": "https://github.com/UnbiasedEagle/mern-auth-service/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/UnbiasedEagle/mern-auth-service.git"
+    },
+    "license": "ISC",
+    "author": "Saurabh Singh <devsaurabhsingh@gmail.com>",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node src/server.js",
+        "format:fix": "prettier --write .",
+        "format:check": "prettier --check ."
+    },
+    "devDependencies": {
+        "@types/node": "^26.6.2",
+        "prettier": "3.9.9",
+        "typescript": "^7.0.2"
+    }
 }
