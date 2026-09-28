@@ -15,7 +15,8 @@
     "type": "commonjs",
     "main": "index.js",
     "scripts": {
-        "dev": "node src/server.js",
+        "build": "tsc",
+        "start": "node dist/server.js",
         "format:fix": "prettier --write .",
         "format:check": "prettier --check .",
         "lint:check": "eslint .",
@@ -40,5 +41,8 @@
         "*.{json,md,yml,yaml}": [
             "prettier --write"
         ]
+    },
+    "dependencies": {
+        "dotenv": "^18.0.4"
     }
 }

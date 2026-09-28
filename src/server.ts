@@ -1,4 +1,3 @@
-function welcome(name: string) {
-    console.log(`Welcome to auth service, ${name}`)
-}
-welcome('Saurabh')
+import { Config } from './config'
+
+console.log(`Server will be running on port ${Config.PORT}`)
