@@ -19,14 +19,26 @@
         "format:fix": "prettier --write .",
         "format:check": "prettier --check .",
         "lint:check": "eslint .",
-        "lint:fix": "eslint . --fix"
+        "lint:fix": "eslint . --fix",
+        "prepare": "husky"
     },
     "devDependencies": {
         "@eslint/js": "^10.0.1",
         "@types/node": "^26.6.2",
         "eslint": "^10.11.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.4.0",
         "prettier": "3.9.9",
         "typescript": "~6.0",
         "typescript-eslint": "^8.70.1"
+    },
+    "lint-staged": {
+        "*.{js,mjs,cjs,ts}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{json,md,yml,yaml}": [
+            "prettier --write"
+        ]
     }
 }
