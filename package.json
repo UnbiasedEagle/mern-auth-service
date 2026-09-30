@@ -22,17 +22,24 @@
         "format:check": "prettier --check .",
         "lint:check": "eslint .",
         "lint:fix": "eslint . --fix",
-        "prepare": "husky"
+        "prepare": "husky",
+        "test": "jest",
+        "test:watch": "jest --watch --runInBand"
     },
     "devDependencies": {
         "@eslint/js": "^10.0.1",
         "@types/express": "^5.0.6",
         "@types/http-errors": "^2.0.5",
+        "@types/jest": "^30.0.0",
         "@types/node": "^26.6.2",
+        "@types/supertest": "^7.2.1",
         "eslint": "^10.11.0",
         "husky": "^9.1.7",
+        "jest": "^30.5.2",
         "lint-staged": "^16.4.0",
         "prettier": "3.9.9",
+        "supertest": "^7.3.0",
+        "ts-jest": "^29.4.14",
         "tsx": "^4.23.15",
         "typescript": "~6.0",
         "typescript-eslint": "^8.70.1"
