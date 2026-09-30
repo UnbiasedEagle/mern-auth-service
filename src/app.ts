@@ -8,7 +8,7 @@ const app = express()
 app.use(express.json())
 
 app.get('/', (_req, res) => {
-    res.send('Welcome to auth service')
+    res.status(200).send('Welcome to auth service')
 })
 
 app.use((err: HttpError, _req: Request, res: Response, _next: NextFunction) => {
